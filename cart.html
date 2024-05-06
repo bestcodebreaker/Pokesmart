@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<style>
+    body{
+        background-color: rgb(218, 153, 164);
+        color: blue;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+       
+        input[type=button]{
+            
+            padding: 12px;
+            border-radius: 20px;
+           
+        }
+        input[type=reset]{
+            
+            padding: 12px;
+            border-radius: 20px;
+           
+        }
+        input[type=text]{
+            
+            padding: 12px;
+            border-radius:10px;
+           
+        }
+        input[type=number]{
+            
+            padding: 12px;
+            border-radius: 10px;
+           
+        }
+        input[type=date]{
+            
+            padding: 12px;
+            border-radius: 10px;
+           
+        }
+      
+        
+        
+</style>
+<body>
+<form>
+    <h1>Delivery details</h1>
+    <input type="text" name="name" id="name" placeholder="Name">
+    <input type="text" name="Last" id="Last" placeholder="Last"><br><br>
+    <input type="text" name="add" id="add" placeholder="Address">
+    <input type="text" name="City" id="City" placeholder="City">
+    <input type="text" name="State" id="State" placeholder="State">
+    <input type="number" name="Zip" id="Zip" placeholder="Zip"><br>
+    <br>
+    <h2>Payment</h2>
+    <input type="number" name="cardnumber" id="cardnumber" placeholder="cardnumber">
+    <br>
+    <br>
+    <input type="date" name="ex" id="ex">
+    <input type="number" name="cvv" id="cvv" placeholder="cvv">
+    <br>
+    <br>
+    <input type="button" value="Purchase" onclick="cardnumber.value=ans();"> <input type="reset" value="Reset">
+</form>
+<br>
+<br>
+<a href="./homepage.html">Homepage</a>    
+
+    <script>
+        function ans() {
+           if (document.getElementById("cardnumber").value) {
+            alert("Thank you for shopping with Us, and your id number is"+" "+ Math.random());
+           } else {
+            alert("Please enter your cardnumber");
+           } 
+        }
+    </script>
+</body>
+</html>

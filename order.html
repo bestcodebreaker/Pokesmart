@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track your order</title>
+</head>
+<style>
+    body{
+        background-color: bisque;
+    }
+    h1{
+        text-align: center;
+    }
+    .tracking{
+        text-align: center;
+        padding: 12px 20px;
+    }
+</style>
+<body>
+<form>
+    <h1>Enter your order number</h1>
+    <div class="tracking">
+    <input type="number" name="trackid" id="trackid" placeholder="idnumber">
+    <input type="button" value="submit" onclick="trackid.value=track();"> <input type="reset" value="Reset">
+</form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2>Can't find your id number leave us comment.</h2>
+    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    <input type="submit" value="Submit" onclick="textarea.value=area();">
+    <br>
+    <br>
+    <a href="./homepage.html"> Homepage</a>
+    <script>
+        function track() {
+            if (document.getElementById("trackid").value) {
+                alert( "Tomorrow at 9:00am");
+            } else {
+                alert("Error please reenter your id number or call customer service");
+            }
+        }
+
+        function area() {
+            if (document.getElementById("textarea").value) {
+                alert("Thank you, we'll get back to you in 24hrs.");
+            } else {
+                alert("Error please retry.");
+            }
+        }
+    </script>
+</body>
+</html>

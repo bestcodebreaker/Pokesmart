@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+</head>
+<style>
+  .food{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
+<body>
+    <form>
+    <div class="food">
+        <img src="./bugtypebag.PNG" alt="bugtypebag">
+        <h1>Bug type bag</h1>
+        <p class="price">$20</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag" >
+    </div>
+    <div class="food">
+        <img src="./darktypebag.PNG" alt="darktypebag">
+        <h1>Darktype bag</h1>
+        <p class="price">$15</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag2" >
+    </div>
+    <div class="food">
+        <img src="./dragontypebag.PNG" alt="dragontypebag">
+        <h1>Dragon type bag</h1>
+        <p class="price">$20</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag" >
+    </div>
+    <div class="food">
+        <img src="./earthtypebag.PNG" alt="earthtypebag">
+        <h1>Earth type bag</h1>
+        <p class="price">$30</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag">
+    </div>
+    <div class="food">
+        <img src="./electrictypebag.png" alt="electrictypebag">
+        <h1>Electric type bag</h1>
+        <p class="price">$10</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag">
+    </div>
+    <div class="food">
+        <img src="./fairytypebag.PNG" alt="fairytypebag">
+        <h1>Fairy type bag</h1>
+        <p class="price">$30</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag" >
+    </div>
+    <div class="food">
+        <img src="./fightingtypebag.PNG" alt="fightingtypebag">
+        <h1>Fighting type bag</h1>
+        <p class="price">$20</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag" >
+    </div>
+    <div class="food">
+        <img src="./firetypebag.PNG" alt="firetypebag">
+        <h1>Fire type bag</h1>
+        <p class="price">$20</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag">
+    </div>
+    <div class="food">
+        <img src="./flyingtypebag.PNG" alt="flyingtypebag">
+        <h1>Flying type bag</h1>
+        <p class="price">$15</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();"id="bag" >
+    </div>
+    <div class="food">
+        <img src="./ghosttypebag.PNG" alt="ghosttypebag">
+        <h1>Ghost type bag</h1>
+        <p class="price">$10</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();"id="bag">
+    </div>
+    <div class="food">
+        <img src="./groundtypebag.PNG" alt="bugtypebag">
+        <h1>Ground type bag</h1>
+        <p class="price">$10</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag" >
+    </div>
+    <div class="food">
+        <img src="./icetypebag.PNG" alt="bugtypebag">
+        <h1>Ice type bag</h1>
+        <p class="price">$15</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag" >
+    </div>
+    <div class="food">
+        <img src="./normaltypebag.PNG" alt="bugtypebag">
+        <h1>Normal type bag</h1>
+        <p class="price">$20</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag" >
+    </div>
+    <div class="food">
+        <img src="./physictypebag.PNG" alt="bugtypebag">
+        <h1>Physic type bag</h1>
+        <p class="price">$30</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag" >
+    </div>
+    <div class="food">
+        <img src="./posiontypebag.PNG" alt="bugtypebag">
+        <h1>Posion type bag</h1>
+        <p class="price">$15</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag" >
+    </div>
+    <div class="food">
+        <img src="./rocktypebag.PNG" alt="bugtypebag">
+        <h1>rock type bag</h1>
+        <p class="price">$25</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag" >
+    </div>
+    <div class="food">
+        <img src="./steelypebag.PNG" alt="bugtypebag">
+        <h1>Steel type bag</h1>
+        <p class="price">$25</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag" >
+    </div>
+    <div class="food">
+        <img src="./watertypebag.PNG" alt="bugtypebag">
+        <h1>Water type bag</h1>
+        <p class="price">$20</p>
+        <input type="button" value="Add to cart" onclick="total.value=price();" id="bag">
+    </div>
+    Total<input type="text" name="total" id="total">
+    </form>
+    <br>
+    <br>
+    <a href="./cart.html">Checkout</a>
+    <script>
+      function price() {
+        let x = 20;
+        if (document.getElementById("bag2").value) {
+            x;
+        } else {
+            if (document.getElementById("bag").value) {
+                x = x * (0.09);
+            } else {
+              0;  
+            }
+        }
+        return x;
+      }
+    </script>
+</body>
+</html>

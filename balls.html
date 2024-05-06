@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokeball toys</title>
+</head>
+<style>
+    .toy{
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+<div class="toy">
+    <img src="./fastball.PNG" alt="fastball">
+    <h1>Fast ball</h1>
+    <p class="price">$20</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./friendball.PNG" alt="fastball">
+    <h1>Friend ball</h1>
+    <p class="price">$10</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./greatball.PNG" alt="fastball">
+    <h1>Great ball</h1>
+    <p class="price">$50</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./heavyball.PNG" alt="fastball">
+    <h1>Heavy ball</h1>
+    <p class="price">$10</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./levelball.PNG" alt="fastball">
+    <h1>Level ball</h1>
+    <p class="price">$15</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./loveball.PNG" alt="fastball">
+    <h1>Love ball</h1>
+    <p class="price">$25</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./lureball.PNG" alt="fastball">
+    <h1>Lure ball</h1>
+    <p class="price">$20</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./masterball.PNG" alt="fastball">
+    <h1>Master ball</h1>
+    <p class="price">$20</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./moonball.PNG" alt="fastball">
+    <h1>Moon ball</h1>
+    <p class="price">$20</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./pokeball.PNG" alt="fastball">
+    <h1>Pokeball ball</h1>
+    <p class="price">$24</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./safariball.PNG" alt="fastball">
+    <h1>Safari ball</h1>
+    <p class="price">$30</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./sportball.PNG" alt="fastball">
+    <h1>Sport ball</h1>
+    <p class="price">$15</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+<div class="toy">
+    <img src="./ultraball.PNG" alt="fastball">
+    <h1>Ultra ball</h1>
+    <p class="price">$30</p>
+    <input type="button" value="Add to cart" onclick="total.value=price();" id="poke">
+</div>
+Total <input type="text" name="total" id="total">
+<br>
+<br>
+    <a href="./cart.html">Go to cart</a>
+
+
+</body>
+<script>
+ function price() {
+    let x = 30;
+    if (document.getElementById("poke").value) {
+        x;
+    } else {
+       0; 
+    }
+    return x;
+ }
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appointment</title>
+</head>
+<style>
+    body{
+        background-color: rgb(102, 164, 223);
+    }
+    input[type=text],input[type=text]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+
+    }
+    
+</style>
+<body>
+  <h1>Please fill in as much info as you can</h1>  
+  <br>
+  <br>
+  <div class="question">
+    <form>
+ <input type="text" name="name" id="name" placeholder="What's your name?">
+  <input type="text" name="poketype" id="type" placeholder="What's your pokemontype?">
+ <input type="text" name="injury" id="injury" placeholder="What injury does your pokemon have?">
+ Enter the date for your appointment:<input type="date" name="date" id="date">
+ <input type="time" name="time" id="time"><br><br>
+ <input type="button" value="Submit" onclick="time.value=hour();">
+ <input type="reset" value="Reset">
+</form>
+<br>
+<br>
+<a href="./homepage.html"> Homepage</a>
+<script>
+function hour() {
+    if (document.getElementById("time").value) {
+        alert("You're all set." );  
+    } else {
+       alert("Please fill in the time for your appointment."); 
+    }
+}
+</script>
+</body>
+</html>

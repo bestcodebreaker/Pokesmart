@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+<style>
+    body{
+        background-color: greenyellow;
+    }
+ 
+    
+</style>
+<body onload="draw()">
+    <canvas id="square" width="150px" height="150px"></canvas><p>Pokesmart</p>
+    <canvas id="cirlce" width="150px" height="150px"></canvas><p>Your'e here</p>
+    <canvas id="cirlce2" width="150px" height="150px"></canvas><p>Boats</p>
+
+    <div class="img-magnifier-container">
+        <img src="./maps.jpg" id="maps" alt="maps">
+    </div>
+    <a href="./homepage.html">Homepage</a>
+    <script>
+        function draw() {
+            var canvas = document.getElementById("square");
+            if (canvas.getContext) 
+            {
+                var context = canvas.getContext("2d");
+                context.fillStyle = "rgb(256,0,0)";
+                context.fillRect(15,10,55,50);    
+            }
+
+            var canvas = document.getElementById("cirlce");
+            if (canvas.getContext) 
+            {
+                var ctx = canvas.getContext('2d'); 
+                var X = canvas.width / 2;
+                var Y = canvas.height / 2;
+                var R = 45;
+                ctx.beginPath();
+                ctx.arc(X, Y, R, 0, 2 * Math.PI, false);
+                ctx.lineWidth = 3;
+                ctx.strokeStyle = 'blue';
+                ctx.stroke();  
+            }
+            var canvas = document.getElementById("cirlce2");
+            if (canvas.getContext) 
+            {
+                var ctx = canvas.getContext('2d'); 
+                var X = canvas.width / 2;
+                var Y = canvas.height / 2;
+                var R = 45;
+                ctx.beginPath();
+                ctx.arc(X, Y, R, 0, 2 * Math.PI, false);
+                ctx.lineWidth = 3;
+                ctx.strokeStyle = 'green';
+                ctx.stroke();  
+            }
+        }
+       
+      
+    </script>
+</body>
+</html>
